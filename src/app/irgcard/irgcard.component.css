@@ -1,0 +1,18 @@
+.IRG-card-button {
+    color: white;
+    background-color:#00457C; 
+    display: block;
+    height: 48px;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  .IRG-card {
+    background-color: white;
+    max-width: 240px;
+    max-height: 400px;
+    justify-content: center
+  
+  }
+  

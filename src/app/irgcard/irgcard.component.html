@@ -1,0 +1,19 @@
+<!-- Template for all Card components -->
+<mat-grid-list cols="6" rowHeight="300px">
+    <mat-grid-tile *ngFor="let card of card" [colspan]="card.cols" [rowspan]="card.rows">
+    <div> 
+    <mat-card class="IRG-card">
+      <mat-card-header>
+        <mat-card-title></mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-md-image src={{card.imageURL}} alt={{card.imageDesc}}>
+      <mat-card-content>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="IRG-card-button">{{card.Label}}</button>
+      </mat-card-actions>
+    </mat-card>
+    </div>
+    </mat-grid-tile>
+    </mat-grid-list>

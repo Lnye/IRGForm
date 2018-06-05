@@ -1,0 +1,60 @@
+<ng-container>
+  <!-- Header Toolbar, Includes Icon, Title, and Search Form -->
+   <mat-toolbar class="example-header" color='primary'>
+       <button mat-icon-button color="secondary" (click)="sidenav.toggle()">
+     <mat-icon  aria-label="Menu Button">menu</mat-icon>
+       </button>
+       &nbsp;
+       &nbsp;
+     <p>IRGRA Forms</p>
+     <span class="example-spacer"></span>
+ 
+     <form class="example-form">
+   <mat-form-field floatLabel='never' class="example-full-width">
+     <input type="text" placeholder="Search" aria-label="Number" matInput>
+   </mat-form-field>
+ </form>
+     </mat-toolbar>
+ 
+  <!-- Sidenavigation Menu (Links on the side of page) -->
+ 
+   <mat-sidenav-container class="example-container">
+     <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav"
+                  [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+                  [fixedBottomGap]="options.value.bottom">
+       <mat-nav-list class="example-sidenav-menu">
+         <a mat-list-item onClick="window.open('http://www.irgra.com/')"> IRGRA Website</a>
+         <a mat-list-item onClick="window.open('https://irgra.bamboohr.com/login.php?r=%2Fhome%2F')">Bamboo HR</a>
+       </mat-nav-list>
+     </mat-sidenav>
+
+      <app-irgexp>
+
+      </app-irgexp>
+ 
+     <mat-sidenav-content>
+ 
+ <mat-expansion-panel>
+   <mat-expansion-panel-header>
+     <mat-panel-title>
+       This is the expansion title
+     </mat-panel-title>
+     <mat-panel-description>
+       This is a summary of the content
+     </mat-panel-description>
+   </mat-expansion-panel-header>
+   <p>This is the primary content of the panel.</p>
+ </mat-expansion-panel>
+ 
+     </mat-sidenav-content>
+   </mat-sidenav-container>
+ 
+ <!-- Start of Footer Element -->
+ 
+   <mat-toolbar class="example-footer" color='secondary'>
+     <p>IRGRA Internal Forms Web Application, June 2018</p>
+     <span class="example-spacer"></span>
+   </mat-toolbar>
+ </ng-container>
+ 
+ <!-- End of HTML element -->
