@@ -1,3 +1,5 @@
+// Spec.Ts files are for testing. You can just ignore these for this application. 
+
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
