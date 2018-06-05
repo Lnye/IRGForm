@@ -6,12 +6,13 @@
        </button>
        &nbsp;
        &nbsp;
-     <p>IRGRA Forms</p>
+     <p>Forms</p>
      <span class="example-spacer"></span>
  
+  <!-- Search Bar -->
      <form class="example-form">
    <mat-form-field floatLabel='never' class="example-full-width">
-     <input type="text" placeholder="Search" aria-label="Number" matInput>
+      <input type="search" matInput placeholder="Company (disabled)" disabled value="Search">
    </mat-form-field>
  </form>
      </mat-toolbar>
@@ -23,7 +24,8 @@
                   [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
                   [fixedBottomGap]="options.value.bottom">
        <mat-nav-list class="example-sidenav-menu">
-         <a mat-list-item onClick="window.open('http://www.irgra.com/')"> IRGRA Website</a>
+         <a mat-list-item onClick="window.open('http://www.irgra.com/')"> IRG RA</a>
+         <a mat-list-item onClick="window.open('http://www.industrialrealtygroup.com/')">IRG</a>
          <a mat-list-item onClick="window.open('https://irgra.bamboohr.com/login.php?r=%2Fhome%2F')">Bamboo HR</a>
        </mat-nav-list>
      </mat-sidenav>
@@ -33,27 +35,19 @@
       </app-irgexp>
  
      <mat-sidenav-content>
- 
- <mat-expansion-panel>
-   <mat-expansion-panel-header>
-     <mat-panel-title>
-       This is the expansion title
-     </mat-panel-title>
-     <mat-panel-description>
-       This is a summary of the content
-     </mat-panel-description>
-   </mat-expansion-panel-header>
-   <p>This is the primary content of the panel.</p>
- </mat-expansion-panel>
- 
+ <app-irgexp></app-irgexp>
+
      </mat-sidenav-content>
    </mat-sidenav-container>
  
  <!-- Start of Footer Element -->
  
    <mat-toolbar class="example-footer" color='secondary'>
-     <p>IRGRA Internal Forms Web Application, June 2018</p>
-     <span class="example-spacer"></span>
+      <button mat-icon-button disabled>
+          <mat-icon aria-label="Add a new form">add</mat-icon>
+        </button>
+    <span class="example-spacer"></span>
+    <p><font size="2" color="grey">IRGRA Internal Forms Web Application, June 2018</font></p>
    </mat-toolbar>
  </ng-container>
  

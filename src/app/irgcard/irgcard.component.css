@@ -1,11 +1,16 @@
 .IRG-card-button {
-    color: white;
+    color: #00457C;
     background-color:#00457C; 
     display: block;
     height: 48px;
     width: 100%;
     left: 0;
     top: 0;
+  }
+
+  .sample-button {
+    width: 100%;
+    background-color: #00457C;
   }
   
   .IRG-card {

@@ -1,7 +1,68 @@
 <div class="example-container">
   &nbsp;
+  <mat-accordion>
+<!-- Start First Expansion Panel --> 
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          All Forms
+        </mat-panel-title>
+        <mat-panel-description>
+          All available OnBase forms
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-irgcard></app-irgcard>
+    </mat-expansion-panel>
+    &nbsp;
+<!-- End of First Expansion Panel --> 
+    <mat-expansion-panel disabled>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Construction Management
+        </mat-panel-title>
+        <mat-panel-description>
+<!-- Panel Description, Displayed beside title while panel is collapsed --> 
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+<!-- Insert Expansion Panel Content -->
+    </mat-expansion-panel>
+<!-- End of Second Expansion Panel // for help, see material.angular.io expansion panel --> 
+<mat-expansion-panel disabled>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Project Management
+      </mat-panel-title>
+      <mat-panel-description>
+<!-- Panel Description, Displayed beside title while panel is collapsed --> 
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+<!-- Insert Expansion Panel Content -->
+  </mat-expansion-panel>
+  <mat-expansion-panel disabled>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Human Resources
+        </mat-panel-title>
+        <mat-panel-description>
+<!-- Panel Description, Displayed beside title while panel is collapsed --> 
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+<!-- Insert Expansion Panel Content -->
+    </mat-expansion-panel>
+    <mat-expansion-panel disabled>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Information Technology
+          </mat-panel-title>
+          <mat-panel-description>
+  <!-- Panel Description, Displayed beside title while panel is collapsed --> 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+  <!-- Insert Expansion Panel Content -->
+      </mat-expansion-panel>
+<!-- Copy & Past from <mat-expansion-panel></mat-expansion-panel> to create a new panel --> 
+  </mat-accordion>
 
-    <app-irgcard></app-irgcard>
   
 
 </div>
